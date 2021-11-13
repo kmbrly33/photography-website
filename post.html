@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <title>Post One</title>
+</head>
+
+<body id="home">
+    <header>
+      
+<nav id="hamnav">
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger">
+    <div id="hamitems">
+      
+             <a href="index.html">Home</a>
+             <a href="index.html#about">About</a>
+             <a href="index.html#gallery">Portfolio</a>
+            <a href="index.html#blog">Blog</a>
+            <a href="index.html#contact">Contact</a>
+   
+    </div>
+   </nav>
+    </header>
+
+    <main>
+        <section class="post">
+            <h2>Congrats Danvers Family</h2>
+            <p class="meta">
+                <i class="fas fa-user"></i> Posted by <strong>Nicole Jaye | Sept. 27, 2021</strong>
+            </p>
+            <img src="images/expecting.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis quibusdam illo, ut repellat
+                aperiam placeat sunt ad saepe officia architecto quidem asperiores vero voluptatem dolores
+                veritatis labore minima molestias adipisci.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolor voluptate, reiciendis assumenda
+                accusantium id eum, omnis facere consequatur repellat facilis? Iusto dolorem expedita quia tempora
+                itaque doloremque, qui nobis voluptatibus adipisci quisquam earum libero atque. Iusto, veniam ad cum
+                iure voluptatum, laboriosam, perspiciatis voluptate voluptatem nesciunt ab natus nostrum. Voluptatem
+                illo rerum officiis qui excepturi ex dolore ipsa veniam.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis fuga delectus distinctio sapiente
+                cumque ullam repellat repudiandae. Accusamus, quas voluptas? Nam inventore accusamus, rerum nulla omnis
+                aperiam adipisci, minima corrupti delectus sequi id quas possimus voluptates quasi similique incidunt
+                tempore libero quidem esse ipsa, voluptatem at reprehenderit obcaecati. Iste, nisi!</p>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2021 - Nicole Jaye Photography</p>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if (!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(function () {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            } else {
+                navbar.classList.add('top')
+                scrolled = false;
+            }
+        }
+    </script>
+</body>
+
+</html>
